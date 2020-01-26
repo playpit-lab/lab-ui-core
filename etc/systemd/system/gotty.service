@@ -1,0 +1,13 @@
+[Unit]
+Description=Web TTY Service
+Documentation=
+
+[Service]
+ExecStart=/usr/sbin/gotty
+Restart=always
+StartLimitInterval=0
+# NOTE: kind deviates from upstream here with a lower RestartSecuse
+RestartSec=1s
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export HOME=/root
+export TERM=xterm
+/usr/bin/gotty -p 8022 -w /bin/bash -i -l -c "cd ${HOME}; bash"

@@ -1,0 +1,15 @@
+[Unit]
+Description=
+
+[Service]
+Environment=HOME=/root
+EnvironmentFile=-/etc/default/web
+PassEnvironment=TRAINING MODULE ANALYTICS
+ExecStart=/var/_data/web
+WorkingDirectory=/var/_data
+KillMode=process
+Restart=on-failure
+Type=exec
+
+[Install]
+WantedBy=multi-user.target
